@@ -84,7 +84,7 @@
 
 
     <div class="divi">
-        <form class="form-control" action="http://3.110.123.197/cgi-bin/ec2_create.py">
+        <form class="form-control" action="http://44.210.250.132/cgi-bin/ec2_create.py">
             <h2>
                 Launch EC2 Instance
             </h2>
@@ -102,7 +102,7 @@
         <center><h1 class="heading" style="color: white;">Find Your Emotion</h1></center></center>
          </div>
          <center> <div class="imginput">
-         <form enctype="multipart/form-data", action = "http://52.66.249.24/cgi-bin/file.py" method = "PUT">
+         <form enctype="multipart/form-data", action = "http://44.210.250.132/cgi-bin/file.py" method = "PUT">
          <form enctype="multipart/form-data">
          <input  type="file", name="image" , onchange="loadFile(event)" > 
          <br /> <br/>
@@ -128,7 +128,7 @@
             imagename = document.getElementById('runEC2').value
             console.log(imagename)
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'http://65.0.180.97/cgi-bin/ec2_instance.py?image=' + imagename);
+            xhr.open('GET', 'http://44.210.250.132/cgi-bin/ec2_instance.py?image=' + imagename);
             xhr.send();
             xhr.onreadystatechange = function () {
                 if (this.readyState == 4) {

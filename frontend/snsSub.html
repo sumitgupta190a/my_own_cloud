@@ -80,7 +80,7 @@
 
 
     <div class="divi">
-        <form class="form-control" action="http://3.110.123.197/cgi-bin/sns_topic.py">
+        <form class="form-control" action="http://44.210.250.132/cgi-bin/sns_topic.py">
             <h2>
                 Create  an SNS Topic
             </h2>
@@ -112,7 +112,7 @@
             imagename = document.getElementById('runEC2').value
             console.log(imagename)
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'http://65.0.180.97/cgi-bin/ec2_instance.py?image=' + imagename);
+            xhr.open('GET', 'http://44.210.250.132/cgi-bin/ec2_instance.py?image=' + imagename);
             xhr.send();
             xhr.onreadystatechange = function () {
                 if (this.readyState == 4) {
@@ -135,7 +135,7 @@
 
 
 
-<form class="form-control"  action="http://3.110.123.197/cgi-bin/snsTopicSuscb.py">
+<form class="form-control"  action="http://44.210.250.132/cgi-bin/snsTopicSuscb.py">
     <h2>
          SNS Topic Suscription
     </h2>

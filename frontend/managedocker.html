@@ -157,7 +157,7 @@
             os = document.getElementById('osname').value
             // console.log(bucketname)
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'http://65.0.180.97/cgi-bin/create_container.py?name='+name+"&os="+os);
+            xhr.open('GET', 'http://44.210.250.132/cgi-bin/create_container.py?name='+name+"&os="+os);
             xhr.send();
             document.getElementById("result").innerHTML = 'container launching please wait....'
             xhr.onreadystatechange = function(){
@@ -175,7 +175,7 @@
         function listdocker(){
             // console.log(bucketname)
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'http://65.0.180.97/cgi-bin/list_containers.py');
+            xhr.open('GET', 'http://44.210.250.132/cgi-bin/list_containers.py');
             xhr.send();
             xhr.onreadystatechange = function(){
                 if (this.readyState == 4){
@@ -193,7 +193,7 @@
             // console.log(bucketname)
             name = document.getElementById('containername').value
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'http://65.0.180.97/cgi-bin/remove_container.py?name='+name);
+            xhr.open('GET', 'http://44.210.250.132/cgi-bin/remove_container.py?name='+name);
             xhr.send();
             document.getElementById("result").innerHTML = "deleting container";
             xhr.onreadystatechange = function(){
@@ -212,7 +212,7 @@
             // console.log(bucketname)
             name = document.getElementById('dockername2').value
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'http://65.0.180.97/cgi-bin/stop_container.py?name='+name);
+            xhr.open('GET', 'http://44.210.250.132/cgi-bin/stop_container.py?name='+name);
             xhr.send();
             document.getElementById("result").innerHTML = "stopping container";
             xhr.onreadystatechange = function(){
@@ -231,7 +231,7 @@
             // console.log(bucketname)
             name = document.getElementById('dockername1').value
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'http://65.0.180.97/cgi-bin/start_container.py?name='+name);
+            xhr.open('GET', 'http://44.210.250.132/cgi-bin/start_container.py?name='+name);
             xhr.send();
             document.getElementById("result").innerHTML = "starting container";
             xhr.onreadystatechange = function(){
